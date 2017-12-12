@@ -1,0 +1,17 @@
+@mixin ext-overflow($t) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $t;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-box-pack: center;
+  white-space: normal;
+}
+
+@mixin text-overflow-1 {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
